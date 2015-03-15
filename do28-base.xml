@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+************************************************************************
+
+************************************************************************
+-->
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <author>BARANGER Emmanuel (3D/FDM)</author>
+    <aircraft-version>0.1</aircraft-version>
+    <status>Alpha</status>
+   
+    <fuel-fraction>1.0</fuel-fraction>
+  
+    <startup>
+      <splash-texture>Aircraft/DO-28/do28-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path>Aircraft/DO-28/Sounds/do28-sound.xml</path>
+    </sound>
+
+    <model>
+      <path>Aircraft/DO-28/Models/do28.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model> 
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <int type="int" n="0">0</int>
+        <int type="int" n="1">0</int>
+        <int type="int" n="2">0</int>
+        <int type="int" n="3">0</int>
+        <int type="int" n="4">0</int>
+        <int type="int" n="5">0</int>
+      </generic>
+    </multiplay>
+
+    <help>
+      <title>Dornier DO 28 Skyservant</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close crew door</desc>
+      </key>
+      <key>
+        <name>D</name>
+        <desc>Open/Close bay</desc>
+      </key>
+    </help>
+
+    <menubar include="Dialogs/do28-menu.xml"/>
+
+  </sim>
+
+  <input>
+      <keyboard include="Nasal/do28-keyboard.xml"/>
+  </input>
+
+  <nasal>
+    <skyvan>
+      <file>Aircraft/DO-28/Nasal/liveries.nas</file>
+      <file>Aircraft/DO-28/Nasal/doors.nas</file>
+      <file>Aircraft/DO-28/Nasal/light.nas</file>
+      <file>Aircraft/DO-28/Nasal/immat.nas</file>
+    </skyvan>
+  </nasal>
+
+</PropertyList>

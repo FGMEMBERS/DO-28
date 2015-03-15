@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <PropertyList include="do28-jsbsim-cnf.xml"> -->
+<PropertyList include="do28-yasim-cnf.xml">
+
+  <sim>
+    <description>Dornier Do 28 Skyservant</description>
+    <author>BARANGER Emmanuel</author>
+  </sim>
+
+</PropertyList>
+
