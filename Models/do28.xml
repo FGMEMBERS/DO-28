@@ -138,7 +138,7 @@
     </offsets>
   </model> -->
 
-  <!-- Les hélices --> 
+  <!-- Les lices --> 
   <animation>
     <name>HeliceGauche</name>
     <object-name>bolG</object-name>
@@ -155,7 +155,7 @@
     <object-name>propblurD</object-name>
   </animation>
 
-  <!-- Séléction de l'objet visible en fonction des rpm -->
+  <!-- ction de l'objet visible en fonction des rpm -->
   <animation>
     <type>select</type>
     <object-name>propdiscG</object-name>
@@ -202,8 +202,8 @@
     <factor> 1 </factor>
     <center>
       <x-m> -4.632 </x-m>
-      <y-m> -2.224 </y-m>
-      <z-m> -0.853 </z-m>
+      <y-m> -2.223 </y-m>
+      <z-m> -1.0925 </z-m>
     </center>
     <axis>
       <x> 1.000 </x>
@@ -212,7 +212,7 @@
     </axis>
   </animation>
 
-  <!-- Séléction de l'objet visible en fonction des rpm -->
+  <!-- ction de l'objet visible en fonction des rpm -->
   <animation>
     <type>select</type>
     <object-name>propdiscD</object-name>
@@ -260,7 +260,7 @@
     <center>
       <x-m> -4.632 </x-m>
       <y-m>  2.224 </y-m>
-      <z-m> -0.853 </z-m>
+      <z-m> -1.092 </z-m>
     </center>
     <axis>
       <x> 1.000 </x>
@@ -425,13 +425,13 @@
     </axis>
   </animation>
 
-  <!-- Effets lumineux
+  <!-- Effets lumineux -->
   <model>
     <path>Aircraft/DO-28/Models/light/beacon.xml</path>
     <offsets>
-      <x-m> 2.204 </x-m>
+      <x-m> 4.71 </x-m>
       <y-m> 0.000 </y-m>
-      <z-m> 0.605 </z-m>
+      <z-m> 2.800 </z-m>
     </offsets>
   </model>
 
@@ -439,9 +439,9 @@
     <name>LampeGauche</name>
     <path>Aircraft/DO-28/Models/light/RedLight.xml</path>
     <offsets>
-      <x-m> -1.762 </x-m>
-      <y-m> -9.879 </y-m>
-      <z-m>  1.097 </z-m>
+      <x-m> -2.092 </x-m>
+      <y-m> -7.812 </y-m>
+      <z-m>  0.322 </z-m>
     </offsets>
   </model>
 
@@ -449,10 +449,10 @@
     <name>LampeDroite</name>
     <path>Aircraft/DO-28/Models/light/GreenLight.xml</path>
     <offsets>
-      <x-m> -1.762 </x-m>
-      <y-m>  9.879 </y-m>
-      <z-m>  1.097 </z-m>
+      <x-m> -2.092 </x-m>
+      <y-m>  7.812 </y-m>
+      <z-m>  0.322 </z-m>
     </offsets>
-  </model> -->
+  </model> 
 
 </PropertyList>

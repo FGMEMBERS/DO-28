@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>clock.ac</path>
+
+ 
+ 
+ 
+ <animation>
+  <type>material</type>
+  <object-name>SecondHand</object-name>
+  <object-name>MinuteHand</object-name>
+  <object-name>HourHand</object-name>
+    <condition>
+      <not><property>/controls/lighting/instrument-lights</property></not>
+    </condition>		
+        <emission>
+            <red>0.08</red>
+            <green>0.08</green>
+            <blue>0.00</blue>
+        </emission>
+    </animation>
+ 
+ 
+ <animation>
+  <type>material</type>
+  <object-name>Carbtemp.face</object-name>
+  <object-name>SecondHand</object-name>
+  <object-name>MinuteHand</object-name>
+  <object-name>HourHand</object-name>
+    <condition>
+      <property>/controls/lighting/instrument-lights</property>
+    </condition>		
+        <emission>
+            <red>0.9</red>
+            <green>0.82</green>
+            <blue>0.82</blue>
+            <factor-prop>/controls/lighting/instruments-norm</factor-prop>
+        </emission>
+    </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>SecondHand</object-name>
+  <property>/sim/time/utc/day-seconds</property>
+  <factor>6</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>MinuteHand</object-name>
+  <property>/sim/time/utc/day-seconds</property>
+  <factor>0.1</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+ <animation>
+  <type>rotate</type>
+  <object-name>HourHand</object-name>
+  <property>/sim/time/utc/day-seconds</property>
+  <factor>0.008333</factor>
+  <axis>
+   <x>-1</x>
+   <y>0</y>
+   <z>0</z>
+  </axis>
+ </animation>
+
+</PropertyList>
+
+

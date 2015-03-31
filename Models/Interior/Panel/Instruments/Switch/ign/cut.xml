@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <path>cutoff.ac</path>
+
+  
+  <animation>
+    <object-name>info</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>info</object-name>   
+	<condition>
+	<property>controls/lighting/instrument-lights</property> 
+    </condition>
+	<factor-prop>/controls/lighting/panel-norm</factor-prop>
+    <emission>
+      <red>   0.15 </red>
+      <green> 0.12 </green>
+      <blue>  0.12 </blue>
+    </emission>
+  </animation>
+  
+
+  <animation>
+    <type>pick</type>
+    <object-name>info</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+        <command>property-assign</command>
+        <property>consumables/fuel/tank[0]/selected</property>
+		<value>false</value>
+      </binding>
+      <binding>
+        <command>property-assign</command>
+        <property>consumables/fuel/tank[1]/selected</property>
+		<value>false</value>
+      </binding>
+	  <binding>
+        <command>property-assign</command>
+        <property>/controls/engines/engine[0]/throttle</property> 
+         <value>0.032</value>
+	  </binding>
+	  <binding>
+        <command>property-assign</command>
+        <property>/controls/engines/engine[1]/throttle</property> 
+         <value>0.032</value>
+	  </binding>
+    </action>
+  </animation>
+
+
+   <!--animation>
+    <type>translate</type>
+    <object-name>info</object-name>
+    <property>consumables/fuel/tank[1]/selected</property>
+    <factor> 4 </factor>
+    <axis>
+      <x>  0 </x>
+      <y>  1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation  for this we need a working eng system -->
+  
+
+</PropertyList>
+
+

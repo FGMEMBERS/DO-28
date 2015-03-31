@@ -13,7 +13,7 @@
     <aircraft-version>0.1</aircraft-version>
     <status>Alpha</status>
    
-    <fuel-fraction>1.0</fuel-fraction>
+    <fuel-fraction>0.45</fuel-fraction>
   
     <startup>
       <splash-texture>Aircraft/DO-28/do28-splash.png</splash-texture>
@@ -53,6 +53,20 @@
         <desc>Open/Close bay</desc>
       </key>
     </help>
+
+   	<weight n="0">
+      <name>Frt Cargo/Passngr</name>
+      <weight-lb>250</weight-lb> 
+      <max-lb>800</max-lb>
+      <min-lb>180</min-lb> 
+    </weight>
+    
+    <weight n="1">
+      <name>Rr Cargo/Passngr</name>
+      <weight-lb>170</weight-lb> 
+      <max-lb>700</max-lb>
+      <min-lb>0</min-lb>      
+    </weight>
 
     <menubar include="Dialogs/do28-menu.xml"/>
 

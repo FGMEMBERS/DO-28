@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+<path>marker.ac</path>
+
+
+    <animation>
+        <type>material</type>
+  <object-name>innermarker</object-name>
+  <object-name>outermarker</object-name> 
+    <condition>
+      <not><property>/controls/lighting/instrument-lights</property></not>
+	  <property>controls/electric/battery-switch</property>
+    </condition>		
+        <emission>
+            <red>0.18</red>
+            <green>0.18</green>
+            <blue>0.08</blue>
+        </emission>
+    </animation>
+	
+	
+	    <animation>
+        <type>material</type>
+  <object-name>middlemarker</object-name> 
+    <condition>
+      <not><property>/controls/lighting/instrument-lights</property></not>
+	  <property>controls/electric/battery-switch</property>
+	  <property>/autopilot/settings/gps-driving-true-heading</property>
+    </condition>		
+        <emission>
+            <red>0.18</red>
+            <green>0.18</green>
+            <blue>0.08</blue>
+        </emission>
+    </animation>
+	
+	
+
+	
+	
+
+
+     <animation>
+  <type>material</type>
+  <object-name>innermarker</object-name>
+  <object-name>outermarker</object-name>  
+    <condition>
+      <property>/controls/lighting/instrument-lights</property>
+    </condition>		
+        <emission>
+            <red>0.5</red>
+            <green>0.52</green>
+            <blue>0.52</blue>
+            <!--factor-prop>/systems/electrical/outputs/instrument-lights-norm</factor-prop-->
+        </emission>
+    </animation>
+	
+	<animation>
+  <type>material</type>
+  <object-name>middlemarker</object-name> 
+    <condition>
+      <property>/controls/lighting/instrument-lights</property>
+	  <property>/autopilot/settings/gps-driving-true-heading</property>
+    </condition>		
+        <emission>
+            <red>0.5</red>
+            <green>0.52</green>
+            <blue>0.52</blue>
+            <!--factor-prop>/systems/electrical/outputs/instrument-lights-norm</factor-prop-->
+        </emission>
+    </animation>
+
+</PropertyList>
